@@ -33,7 +33,7 @@
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-        navigator.geolocation.watchPosition((position) => {
+        navigator.geolocation.getCurrentPosition((position) => {
             console.log('Geolocation is available');
             map.setView([position.coords.latitude, position.coords.longitude], 20)
             L.marker(
