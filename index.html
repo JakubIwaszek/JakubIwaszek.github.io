@@ -30,14 +30,19 @@
                     class="flex-1 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     Mapa
                 </a>
-                <a href="./sos.html"
+                <button onclick="vibrate()"
                     class="flex-1 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     SOS
-                </a>
+                </button>
             </div>
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script>
+        function vibrate() {
+            window.navigator.vibrate([100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,]);
+        }
+    </script>
 </body>
 
 </html>
